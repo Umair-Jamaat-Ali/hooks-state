@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useReducer, useState } from 'react'
 import Card from './components/card/Card'
+import Link from 'next/link';
 
 export default function page() {
 
@@ -98,6 +99,9 @@ export default function page() {
       {reduCount}
       <button onClick={()=> {dispatch({type:"increament"})}}>+</button>
     </div>
+    <li><Link href="/service">Services Page</Link></li>
+    <li><Link href="/clientSideAPI">Client Side Page</Link></li>
+    <li><Link href="/serverSideAPI">Server Side Page</Link></li>
     </>
   )
 }
